@@ -1,0 +1,96 @@
+{
+    "version": 2,
+    "name": "Creality K1 (Klipper)",
+    "inherits": "creality_base",
+    "metadata":
+    {
+        "visible": true,
+        "quality_definition": "creality_base"
+    },
+    "overrides":
+    {
+        "machine_name": { "default_value": "Creality K1 (Klipper)" },
+        "machine_width": { "default_value": 220 },
+        "machine_depth": { "default_value": 220 },
+        "machine_height": { "default_value": 250 },
+        "machine_heated_bed": { "default_value": true },
+        "machine_center_is_zero": { "default_value": false },
+        "machine_start_gcode": { "default_value": "START_PRINT EXTRUDER_TEMP={material_print_temperature_layer_0} BED_TEMP={material_bed_temperature_layer_0}\nG92 E0\n" },
+        "machine_end_gcode": { "default_value": "END_PRINT\n" },
+        "machine_disallowed_areas":
+        {
+            "default_value": [
+                [
+                    [-110, -110],
+                    [110, -110],
+                    [110, -102],
+                    [-110, -102]
+                ]
+            ]
+        },
+        "machine_head_with_fans_polygon":
+        {
+            "default_value": [
+                [-26, 34],
+                [-26, -32],
+                [32, -32],
+                [32, 34]
+            ]
+        },
+        "gantry_height": { "value": 25 },
+        "machine_max_feedrate_x": { "value": 800 },
+        "machine_max_feedrate_y": { "value": 800 },
+        "machine_max_feedrate_z": { "value": 20 },
+        "machine_max_acceleration_x": { "value": 20000 },
+        "machine_max_acceleration_y": { "value": 20000 },
+        "machine_max_acceleration_z": { "value": 300 },
+
+        "adhesion_type": { "value": "'skirt'" },
+        "skirt_gap": { "value": 3.0 },
+        "skirt_line_count": { "value": 2 },
+
+        "layer_height_0": { "value": 0.2 },
+        "line_width": { "value": 0.42 },
+        "wall_line_width_0": { "value": 0.42 },
+        "wall_line_width_x": { "value": 0.45 },
+        "infill_line_width": { "value": 0.45 },
+        "initial_layer_line_width_factor": { "value": 119 },
+        "wall_line_count": { "value": 2 },
+        "top_layers": { "value": 5 },
+        "bottom_layers": { "value": 3 },
+        "infill_sparse_density": { "value": 15 },
+        "infill_pattern": { "value": "'grid'" },
+
+        "retraction_amount": { "value": 0.8 },
+        "retraction_speed": { "default_value": 40 },
+        "retraction_min_travel": { "value": 1 },
+        "retraction_hop_enabled": { "value": true },
+        "retraction_hop": { "value": 0.4 },
+
+        "speed_print": { "value": 250 },
+        "speed_wall_0": { "value": 200 },
+        "speed_wall_x": { "value": 300 },
+        "speed_infill": { "value": 270 },
+        "speed_topbottom": { "value": 250 },
+        "speed_roofing": { "value": 200 },
+        "speed_support": { "value": 150 },
+        "speed_travel": { "value": 500 },
+        "speed_layer_0": { "value": 60 },
+        "speed_print_layer_0": { "value": 60 },
+        "speed_travel_layer_0": { "value": 250 },
+        "skirt_brim_speed": { "value": 50 },
+
+        "acceleration_enabled": { "value": true },
+        "acceleration_print": { "value": 10000 },
+        "acceleration_wall_0": { "value": 5000 },
+        "acceleration_wall_x": { "value": 5000 },
+        "acceleration_infill": { "value": 10000 },
+        "acceleration_topbottom": { "value": 10000 },
+        "acceleration_roofing": { "value": 2000 },
+        "acceleration_travel": { "value": 10000 },
+        "acceleration_layer_0": { "value": 1000 },
+        "acceleration_print_layer_0": { "value": 1000 },
+        "acceleration_travel_layer_0": { "value": 5000 },
+        "jerk_enabled": { "value": false }
+    }
+}
